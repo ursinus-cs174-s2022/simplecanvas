@@ -115,9 +115,9 @@ class SimpleCanvas {
          */
         void createWrapper() {
             data = new uint8_t**[height];
-            for (size_t i = 0; i < height; i++) {
+            for (int i = 0; i < height; i++) {
                 data[i] = new uint8_t*[width];
-                for (size_t j = 0; j < width; j++) {
+                for (int j = 0; j < width; j++) {
                     data[i][j] = dataInternal + (i*width+j)*3;
                 }
             }
@@ -125,7 +125,7 @@ class SimpleCanvas {
 
         void deallocate() {
             if (dataInternal != NULL) {
-                for (size_t i = 0; i < height; i++) {
+                for (int i = 0; i < height; i++) {
                     delete[] data[i];
                 }
                 delete[] data;
