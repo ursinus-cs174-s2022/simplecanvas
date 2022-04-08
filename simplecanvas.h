@@ -22,9 +22,10 @@ class SimpleCanvas {
          * @param y y location of lower left corner of character
          * @param dx Change in x to move cursor after this character
          * @param dy Change in y to move cursor after this character
+         * @param relpath Relative path to directory containing the fonts
          * @return Width of character
          */
-        void drawChar(char c, int x0, int y0, int* dx, int* dy);
+        void drawChar(char c, int x0, int y0, int* dx, int* dy, std::string relpath);
 
         /**
          * @brief Create a 3D array wrapper around the flattened image format
@@ -171,8 +172,9 @@ class SimpleCanvas {
          * @param s The string to draw
          * @param x x location of lower left corner of the string
          * @param y y location of lower left corner of the string
+         * @param relpath Relative path to directory containing the fonts
          */
-        void drawString(std::string s, int x0, int y0);
+        void drawString(std::string s, int x0, int y0, std::string relpath);
 };
 
 #endif

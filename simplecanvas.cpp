@@ -69,12 +69,13 @@ void SimpleCanvas::drawLineHigh(int x0, int y0, int x1, int y1, uint8_t R, uint8
  * @param y y location of lower left corner of character
  * @param dx Change in x to move cursor after this character
  * @param dy Change in y to move cursor after this character
+ * @param relpath Relative path to directory containing the fonts
  * @return Width of character
  */
-void SimpleCanvas::drawChar(char c, int x0, int y0, int* dx, int* dy) {
+void SimpleCanvas::drawChar(char c, int x0, int y0, int* dx, int* dy, std::string relpath) {
     if (((int)c > 31 || (int)c == 10) && !((int)c > 126 && (int)c < 160)) {
         std::stringstream ss;
-        ss << "Font/" << ((int)c) << ".png";
+        ss << relpath << "Font/" << ((int)c) << ".png";
         int w, h, n;
         uint8_t* img = stbi_load(ss.str().c_str(), &w, &h, &n, 3);
         if (img != NULL) {
@@ -356,14 +357,15 @@ void SimpleCanvas::fillCircle(int cx, int cy, double r, uint8_t R, uint8_t G, ui
  * @param s The string to draw
  * @param x x location of lower left corner of the string
  * @param y y location of lower left corner of the string
+ * @param relpath Relative path to directory containing the fonts
  */
-void SimpleCanvas::drawString(std::string s, int x0, int y0) {
+void SimpleCanvas::drawString(std::string s, int x0, int y0, std::string relpath) {
     int x = x0;
     int y = y0;
     const char* c = s.c_str();
     int dx = 0, dy = 0;
     for (size_t i = 0; i < s.length(); i++) {
-        drawChar(c[i], x, y, &dx, &dy);
+        drawChar(c[i], x, y, &dx, &dy, relpath);
         if (dx == -1) {
             // Carriage return
             x = x0;
