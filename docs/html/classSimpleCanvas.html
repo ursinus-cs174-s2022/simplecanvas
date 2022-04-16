@@ -69,6 +69,11 @@ $(function() {
 <div class="title">SimpleCanvas Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A simple library for 2D drawing in C++, by Chris Tralie.  
+ <a href="classSimpleCanvas.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="simplecanvas_8h_source.html">simplecanvas.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -109,9 +114,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a477962f44870d07767a53564bc32ef44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimpleCanvas.html#a477962f44870d07767a53564bc32ef44">fillCircle</a> (int cx, int cy, double r, uint8_t R, uint8_t G, uint8_t B)</td></tr>
 <tr class="memdesc:a477962f44870d07767a53564bc32ef44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill in a solid disc of a particular color.  <a href="classSimpleCanvas.html#a477962f44870d07767a53564bc32ef44">More...</a><br /></td></tr>
 <tr class="separator:a477962f44870d07767a53564bc32ef44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a380f364b86b27ebaddebc720c2592792"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimpleCanvas.html#a380f364b86b27ebaddebc720c2592792">drawString</a> (std::string s, int x0, int y0)</td></tr>
-<tr class="memdesc:a380f364b86b27ebaddebc720c2592792"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a character at a string at a position.  <a href="classSimpleCanvas.html#a380f364b86b27ebaddebc720c2592792">More...</a><br /></td></tr>
-<tr class="separator:a380f364b86b27ebaddebc720c2592792"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f312ceb3de64236b2bdee5a09c93fe4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimpleCanvas.html#a4f312ceb3de64236b2bdee5a09c93fe4">drawString</a> (std::string s, int x0, int y0, std::string relpath)</td></tr>
+<tr class="memdesc:a4f312ceb3de64236b2bdee5a09c93fe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a character at a string at a position.  <a href="classSimpleCanvas.html#a4f312ceb3de64236b2bdee5a09c93fe4">More...</a><br /></td></tr>
+<tr class="separator:a4f312ceb3de64236b2bdee5a09c93fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -125,15 +130,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>height</b></td></tr>
 uint8_t ***&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td></tr>
 <tr class="separator:ab08faa02efd4aef85ce8f9709c3b3a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A simple library for 2D drawing in C++, by Chris Tralie. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3f874e440d0c3e01fe842f18ad3449e0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3f874e440d0c3e01fe842f18ad3449e0">&#9670;&nbsp;</a></span>SimpleCanvas() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">SimpleCanvas::SimpleCanvas </td>
@@ -143,11 +147,6 @@ uint8_t ***&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td><
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Construct a new image object from a file. <br  />
@@ -166,9 +165,6 @@ uint8_t ***&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td><
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">SimpleCanvas::SimpleCanvas </td>
@@ -188,11 +184,6 @@ uint8_t ***&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td><
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Instantiate an image object of a particular dimension. </p>
@@ -212,9 +203,6 @@ uint8_t ***&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td><
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void SimpleCanvas::clearRect </td>
@@ -240,11 +228,6 @@ uint8_t ***&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td><
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Clear the entire canvas to be one color. </p>
@@ -264,9 +247,6 @@ uint8_t ***&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td><
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void SimpleCanvas::drawLine </td>
@@ -322,11 +302,6 @@ uint8_t ***&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td><
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Draw a thick line from one point to another. </p>
@@ -351,9 +326,6 @@ uint8_t ***&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td><
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void SimpleCanvas::drawLine </td>
@@ -403,11 +375,6 @@ uint8_t ***&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td><
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Draw a thin line from one point to another. </p>
@@ -431,9 +398,6 @@ uint8_t ***&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td><
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void SimpleCanvas::drawRect </td>
@@ -489,11 +453,6 @@ uint8_t ***&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td><
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Draw the outline of a rectangle with a particular color. </p>
@@ -513,14 +472,11 @@ uint8_t ***&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td><
 
 </div>
 </div>
-<a id="a380f364b86b27ebaddebc720c2592792"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a380f364b86b27ebaddebc720c2592792">&#9670;&nbsp;</a></span>drawString()</h2>
+<a id="a4f312ceb3de64236b2bdee5a09c93fe4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f312ceb3de64236b2bdee5a09c93fe4">&#9670;&nbsp;</a></span>drawString()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void SimpleCanvas::drawString </td>
@@ -538,7 +494,13 @@ uint8_t ***&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td><
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>y0</em>&#160;</td>
+          <td class="paramname"><em>y0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>relpath</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -546,11 +508,6 @@ uint8_t ***&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td><
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Draw a character at a string at a position. </p>
@@ -559,6 +516,7 @@ uint8_t ***&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td><
     <tr><td class="paramname">s</td><td>The string to draw </td></tr>
     <tr><td class="paramname">x</td><td>x location of lower left corner of the string </td></tr>
     <tr><td class="paramname">y</td><td>y location of lower left corner of the string </td></tr>
+    <tr><td class="paramname">relpath</td><td>Relative path to directory containing the fonts </td></tr>
   </table>
   </dd>
 </dl>
@@ -570,9 +528,6 @@ uint8_t ***&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td><
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void SimpleCanvas::fillCircle </td>
@@ -616,11 +571,6 @@ uint8_t ***&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td><
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Fill in a solid disc of a particular color. </p>
@@ -643,9 +593,6 @@ uint8_t ***&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td><
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void SimpleCanvas::fillRect </td>
@@ -695,11 +642,6 @@ uint8_t ***&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td><
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Fill a solid rectangle with a color. </p>
@@ -723,9 +665,6 @@ uint8_t ***&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td><
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void SimpleCanvas::read </td>
@@ -735,11 +674,6 @@ uint8_t ***&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td><
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Read in a ppm file. Use ffmpeg to convert the file to a temporary .ppm file if it has a non ppm extension. </p>
@@ -757,9 +691,6 @@ uint8_t ***&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td><
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void SimpleCanvas::setPixel </td>
@@ -797,11 +728,6 @@ uint8_t ***&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td><
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Set the color of a particular pixel. </p>
@@ -823,9 +749,6 @@ uint8_t ***&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td><
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void SimpleCanvas::write </td>
@@ -835,11 +758,6 @@ uint8_t ***&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td><
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Write the image to a file If the filename ends with an extension other than ppm, write it to a temporary ppm file, and use ffmpeg to convert it to the desired name</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -852,7 +770,7 @@ uint8_t ***&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td><
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="SimpleCanvas_8h_source.html">SimpleCanvas.h</a></li>
+<li><a class="el" href="simplecanvas_8h_source.html">simplecanvas.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
