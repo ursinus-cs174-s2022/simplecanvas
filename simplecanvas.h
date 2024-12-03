@@ -5,6 +5,7 @@
 #define SIMPLECANVAS_H
 
 #include <string>
+#include <cstdint>
 
 class SimpleCanvas {
     private:
